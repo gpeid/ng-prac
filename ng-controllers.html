@@ -2,6 +2,14 @@
 <head>
 	<title>NG Binding</title>
 	<link rel="stylesheet" type="text/css" href="css/global.css">
+	<script type="text/javascript">
+		angular.module("app", [])
+		.controller("FirstCtrl", function FirstCtrl(){
+			var first = this;
+
+			first.greeting = "First";
+		});
+	</script>
 </head>
 <body ng-controllers="FirstCtrl as first">
 	<input body="text" ng-model="first.greeting">
@@ -12,6 +20,5 @@
 
 
 	</div>
-</type>
 	<script type="text/javascript" src="js/angular.min.js"></script>
 </html>

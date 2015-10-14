@@ -1,0 +1,17 @@
+<html>
+<head>
+	<title>NG Controller as</title>
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+
+</head>
+<body>
+
+	<div ng-app="app" ng-controller="RoomCtrl as room"></div>
+		<div class="button" ng-click="room.openDoor()">
+			Open
+		</div>
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+</html>
+
+<!-- Not Working? -->

@@ -1,0 +1,7 @@
+.button{
+	background-color: lavender;
+	display: block;
+	width: 100%;
+	cursor: pointer;
+	text-align: center;
+}
