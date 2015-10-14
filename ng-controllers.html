@@ -1,0 +1,17 @@
+<html ng-app>
+<head>
+	<title>NG Binding</title>
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+</head>
+<body ng-controllers="FirstCtrl as first">
+	<input body="text" ng-model="first.greeting">
+
+	<div ng-class="first.greeting">
+		<!-- ng-class can add a class to the div based on input-->
+		<h1>{{ first.greeting }} {{"World"}}</h1>
+
+
+	</div>
+</type>
+	<script type="text/javascript" src="js/angular.min.js"></script>
+</html>
