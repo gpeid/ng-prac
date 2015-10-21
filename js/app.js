@@ -1,16 +1,14 @@
-angular.module('app', [])
-  .service('greeting', function Greeting() {
-    var greeting = this;
-    greeting.message = 'Default';
-  })
-  .controller('FirstCtrl', function FirstCtrl(greeting) {
+angular.module('app', ["ui.router"])
+// a state for controller
+	.config(function config($stateProvider) {
+	$stateProvider.state("index", {
+		url:"";
+		controller: "FirstCtrl as first",
+		templateUrl: "templates/first.html"
+	})
+	})
+  .controller('FirstCtrl', function FirstCtrl() {
     var first = this;
   
-    first.greeting = greeting;  
+    first.greeting = "First";  
   })
-  .controller('SecondCtrl', function SecondCtrl(greeting) {
-    var second = this;
-  
-    second.greeting = greeting;  
-  })
-;
